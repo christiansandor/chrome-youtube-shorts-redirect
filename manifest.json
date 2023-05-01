@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts Redirect",
+  "description": "Redirects YouTube Shorts to the full video.",
+  "version": "0.1",
+  "icons": {
+    "16": "images/youtube-shorts-logo-16.png",
+    "32": "images/youtube-shorts-logo-32.png",
+    "48": "images/youtube-shorts-logo-48.png",
+    "128": "images/youtube-shorts-logo-128.png",
+    "256": "images/youtube-shorts-logo-256.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/youtube-shorts-logo-16.png",
+      "32": "images/youtube-shorts-logo-32.png",
+      "48": "images/youtube-shorts-logo-48.png",
+      "128": "images/youtube-shorts-logo-128.png",
+      "256": "images/youtube-shorts-logo-256.png"
+    }
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/shorts/*"
+  ]
+}
